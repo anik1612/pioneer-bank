@@ -42,7 +42,7 @@ withdrawBtn.addEventListener('click', function () {
     lastWithdraw = parseFloat(newWithdraw);
     totalWithdraw = currentWithdraw + lastWithdraw;
     document.getElementById('currentWithdraw').innerText = totalWithdraw;
-
+    document.getElementById('withdrawAmount').value = '';
     //new balance calculation
     const currentBalance = document.getElementById('currentBalance').innerText;
     const currentBal = parseFloat(currentBalance);
